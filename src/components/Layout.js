@@ -14,7 +14,9 @@ class Layout extends React.Component {
           class: "bilberry-hugo-theme"
         }}/>
         <Header/>
-        {children}
+        <div class="main container">
+          {children}
+        </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
