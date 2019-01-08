@@ -31,7 +31,7 @@ class BlogIndex extends React.Component {
                   {/* TODO: Componentize and fix metadata */}
                   <div className="meta">
                     <span className="date">{node.frontmatter.date}</span>
-                    <span className="readingTime">5min or so</span>
+                    <span className="readingTime">{node.fields.readingTime.text}</span>
                     <span className="categories">
                       <a>Code</a>
                       <a>Other</a>
@@ -68,6 +68,9 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
+            readingTime {
+              text
+            }
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
