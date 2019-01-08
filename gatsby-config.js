@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `My cool new Blog`,
+    title: `Coding Tangents`,
     author: `Scott O'Malley`,
+    subtitle: `Come for the code, stay for the tangents.`,
     description: `Come for the code, stay for the tangents.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
