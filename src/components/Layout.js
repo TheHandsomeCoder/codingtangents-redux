@@ -14,7 +14,7 @@ class Layout extends React.Component {
           class: "bilberry-hugo-theme"
         }}/>
         <Header/>
-        <div class="main container">
+        <div className="main container">
           {children}
         </div>
         <footer>

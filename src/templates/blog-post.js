@@ -19,7 +19,6 @@ class BlogPostTemplate extends React.Component {
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr/>
-
         <ul>
           <li>
             {previous && (
