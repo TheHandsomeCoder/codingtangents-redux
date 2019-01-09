@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
+import Footer from '../components/Footer'
 
 class BlogIndex extends React.Component {
   render() {
@@ -43,6 +44,7 @@ class BlogIndex extends React.Component {
                   {/* TODO: Fix Continue Reading */}
                   <Link to={node.fields.slug} className="more">Continue Reading</Link>
                 </div>
+                <Footer tags={node.frontmatter.tags}></Footer>
               </article>
             </div>
           )
@@ -75,6 +77,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tags
           }
         }
       }

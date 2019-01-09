@@ -2,6 +2,12 @@
 title: My Second Post!
 date: '2015-05-06T23:46:37.121Z'
 postType: Code
+tags:
+  - code
+  - '2019'
+  - personal
+  - not a new years resolution
+  - I don't know how tags work
 ---
 
 Wow! I love blogging so much already.

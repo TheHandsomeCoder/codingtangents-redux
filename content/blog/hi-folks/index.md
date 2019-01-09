@@ -2,6 +2,12 @@
 title: New Beginnings
 date: '2015-05-28T22:40:32.169Z'
 postType: Code
+tags:
+  - code
+  - '2019'
+  - personal
+  - not a new years resolution
+  - I don't know how tags work
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and
