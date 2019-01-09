@@ -2,7 +2,7 @@ import React from 'react'
 import { kebabCase } from 'lodash'
 import { Link } from 'gatsby'
 import '../assets/styles/theme.scss'
-export default class Footer extends React.Component {
+export default class ArticleFooter extends React.Component {
 
     render() {
         const tags = this.props.tags;

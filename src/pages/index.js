@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
-import Footer from '../components/Footer'
+import ArticleFooter from '../components/ArticeFooter'
 
 class BlogIndex extends React.Component {
   render() {
@@ -44,7 +44,7 @@ class BlogIndex extends React.Component {
                   {/* TODO: Fix Continue Reading */}
                   <Link to={node.fields.slug} className="more">Continue Reading</Link>
                 </div>
-                <Footer tags={node.frontmatter.tags}></Footer>
+                <ArticleFooter tags={node.frontmatter.tags}></ArticleFooter>
               </article>
             </div>
           )
