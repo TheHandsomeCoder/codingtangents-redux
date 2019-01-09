@@ -53,9 +53,8 @@ class BlogIndex extends React.Component {
 }
 
 const Categories = (props) => {
-  const categories = props.categories;
-  if (!categories) { return null; }
-  const renderedCategories = categories.map(cat => (
+  if (!props.categories) { return null; }
+  const renderedCategories = props.categories.map(cat => (
     <Link to={`/category/${kebabCase(cat)}/`}>{cat}</Link>
   ));
   return (
