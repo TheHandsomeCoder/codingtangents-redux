@@ -34,11 +34,7 @@ class BlogIndex extends React.Component {
                   <div className="meta">
                     <span className="date">{node.frontmatter.date}</span>
                     <span className="readingTime">{node.fields.readingTime.text}</span>
-                    <span className="categories">
-                      {categories.map(cat => (
-                        <Link to={`/category/${kebabCase(cat)}/`}>{cat}</Link>
-                      ))}
-                    </span>
+                    <Categories categories={categories}/>
                     <span className="author">{author}</span>
                   </div>
                   {/* TODO: Set Excerpt */}
@@ -55,6 +51,21 @@ class BlogIndex extends React.Component {
     )
   }
 }
+
+const Categories = (props) => {
+  const categories = props.categories;
+  if (!categories) { return null; }
+  const renderedCategories = categories.map(cat => (
+    <Link to={`/category/${kebabCase(cat)}/`}>{cat}</Link>
+  ));
+  return (
+    <span className="categories">
+      {[... renderedCategories]}
+    </span>
+  )
+}
+
+
 
 export default BlogIndex
 

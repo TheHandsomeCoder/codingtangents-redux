@@ -4,7 +4,7 @@ date: 2019-02-01T09:31:27+01:00
 
 categories: ['Code', 'Tutorials']
 tags: ['Hugo', 'Bilberry Theme']
-author: "Scott O'Malley"
+author: "Scott"
 ---
 You will find all information to setup this theme with your hugo site
 on the official <br> [Github Repository](https://github.com/Lednerb/bilberry-hugo-theme).
