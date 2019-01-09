@@ -1,7 +1,7 @@
 ---
 title: New Beginnings
 date: '2015-05-28T22:40:32.169Z'
-postType: Code
+categories: ['Code', 'Tutorials']
 tags:
   - code
   - '2019'

@@ -1,13 +1,13 @@
 ---
 title: Hello World
 date: '2015-05-01T22:12:03.284Z'
+categories: ['Code', 'Tutorials']
 postType: Code
 tags:
   - code
   - '2019'
   - personal
   - not a new years resolution
-  - I don't know how tags work
 ---
 
 This is my first post on my new fake blog! How exciting!

@@ -4,12 +4,12 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import ArticleFooter from '../components/ArticeFooter'
+import { kebabCase } from 'lodash'
 
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { title, author } = data.site.siteMetadata
-
     const posts = data.allMarkdownRemark.edges
 
     return (
@@ -20,6 +20,7 @@ class BlogIndex extends React.Component {
         />
 
         {posts.map(({ node }) => {
+          const { categories } = node.frontmatter;
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div className="article-wrapper u-cf" key={node.fields.slug}>
@@ -34,8 +35,9 @@ class BlogIndex extends React.Component {
                     <span className="date">{node.frontmatter.date}</span>
                     <span className="readingTime">{node.fields.readingTime.text}</span>
                     <span className="categories">
-                      <a>Code</a>
-                      <a>Other</a>
+                      {categories.map(cat => (
+                        <Link to={`/category/${kebabCase(cat)}/`}>{cat}</Link>
+                      ))}
                     </span>
                     <span className="author">{author}</span>
                   </div>
@@ -78,6 +80,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             tags
+            categories
           }
         }
       }
