@@ -16,9 +16,6 @@ export default class Footer extends React.Component {
                         {tags.map(tag => (
                              <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                         ))}
-                        {/* {{ range . }}
-                            <a href="{{ (print "/tags/" (. | urlize)) | relLangURL }}">{{ . }}</a>
-                        {{ end }} */}
                     </div>
                 </div>
 
