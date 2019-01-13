@@ -4,10 +4,10 @@ date: 2019-02-01T09:31:27+01:00
 
 categories: ['Code', 'Tutorials']
 tags: ['Hugo', 'Bilberry Theme']
-author: "Scott"
+author: "Scott O'Malley"
 ---
 You will find all information to setup this theme with your hugo site
-on the official <br> [Github Repository](https://github.com/Lednerb/bilberry-hugo-theme).
+on the official [Github Repository](https://github.com/Lednerb/bilberry-hugo-theme).
 
 <!--more-->
 
@@ -15,26 +15,26 @@ __If you want to install this theme, follow these steps:__
 
 - Install Hugo and create a new site:
 
-```sh
+```bash
 hugo new site my-new-blog
 ```
 
 - Switch to your `theme` folder and import the latest version of the Bilberry Theme
 
-```sh
+```bash
 cd my-new-blog/themes
 git clone https://github.com/Lednerb/bilberry-hugo-theme.git
 ```
 
 - Copy the example content to your new site
 
-```sh
+```bash
 cp -r bilberry-hugo-theme/exampleSite/* ../
 ```
 
 - Test the installation
 
-```sh
+```bash
 cd ../
 hugo server -D
 ```

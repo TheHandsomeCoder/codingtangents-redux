@@ -34,8 +34,8 @@ class BlogIndex extends React.Component {
                   <div className="meta">
                     <span className="date">{node.frontmatter.date}</span>
                     <span className="readingTime">{node.fields.readingTime.text}</span>
-                    <Categories categories={categories}/>
-                    <span className="author">{author}</span>
+                    <Categories categories={categories}></Categories>
+                    <Author author={author}></Author>
                   </div>
                   {/* TODO: Set Excerpt */}
                   <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
@@ -59,9 +59,16 @@ const Categories = (props) => {
   ));
   return (
     <span className="categories">
-      {[... renderedCategories]}
+      {[...renderedCategories]}
     </span>
   )
+}
+const Author = (props) => {
+  if (!props.author) { return null; }
+  return (
+    <span className="author">
+      <Link to={`/author/${kebabCase(props.author)}/`}>{props.author}</Link>
+    </span>)
 }
 
 
@@ -79,7 +86,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 280, format: HTML)
           fields {
             slug
             readingTime {
