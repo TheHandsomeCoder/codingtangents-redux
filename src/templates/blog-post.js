@@ -37,13 +37,6 @@ class BlogPostTemplate extends React.Component {
             <ArticleFooter tags={post.frontmatter.tags}></ArticleFooter>
           </article>
         </div>
-
-        <h1>{post.frontmatter.title}</h1>
-        <p>
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
         <ul>
           <li>
             {previous && (

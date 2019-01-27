@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import '../assets/styles/theme.scss'
 import Header from './Header'
 import Helmet from 'react-helmet'
+import Credits from './Credits';
 
 class Layout extends React.Component {
   render() {
@@ -17,11 +17,7 @@ class Layout extends React.Component {
         <div className="main container">
           {children}
         </div>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Credits/>
       </div>
     )
   }
