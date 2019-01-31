@@ -37,7 +37,7 @@ class BlogPostTemplate extends React.Component {
             <ArticleFooter tags={post.frontmatter.tags}></ArticleFooter>
           </article>
         </div>
-        <ul>
+        {/* <ul>
           <li>
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
@@ -52,7 +52,7 @@ class BlogPostTemplate extends React.Component {
               </Link>
             )}
           </li>
-        </ul>
+        </ul> */}
       </Layout>
     )
   }
