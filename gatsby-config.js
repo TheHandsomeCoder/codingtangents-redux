@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Coding Tangents`,
+    title: `O'Malley.dev`,
     author: `Scott O'Malley`,
     subtitle: `Come for the code, stay for the tangents.`,
     description: `Come for the code, stay for the tangents.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://omalley.dev`,
     social: {
       twitter: `codingtangents`,
     },
