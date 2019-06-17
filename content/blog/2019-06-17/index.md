@@ -1,8 +1,9 @@
 ---
 title: "Coming Soon!"
-date: 2019-06-17T21:30:42.959Z
+date: "2019-06-17T21:30:42.959Z"
 
 tags: ['blog']
+categories: ['First Steps']
 author: "Scott O'Malley"
 resizeImages: false
 ---
