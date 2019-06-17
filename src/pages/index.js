@@ -38,7 +38,7 @@ class BlogIndex extends React.Component {
                     <Author author={author}></Author>
                   </div>
                   {/* TODO: Set Excerpt */}
-                  <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                  <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
                   {/* TODO: Fix Continue Reading */}
                   <Link to={node.fields.slug} className="more">Continue Reading</Link>
                 </div>
